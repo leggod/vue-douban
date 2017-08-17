@@ -25,7 +25,7 @@
 export default {
     name: 'hello',
     created () {
-        this.$http.get('').then(function (data) {
+        this.$http.get('/api/v2/book/1220562').then(function (data) {
 
         })
     },

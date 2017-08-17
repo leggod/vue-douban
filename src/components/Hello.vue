@@ -25,18 +25,8 @@
 export default {
     name: 'hello',
     created () {
-        console.log(this.axios)
-        this.$http.get('api/v2/book/1220562').then((response) => {
-          console.log(response.data)
-        })
-        this.$http({
-            url: 'api/v2/book/1220562',
-            method: 'get',
-            withCredentials: true
-        }).then((data) => {
-            console.log(data)
-        }).catch((data) => {
-            console.log(data)
+        this.$http.get('').then(function (data) {
+
         })
     },
     data () {

@@ -28,7 +28,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        // proxy all requests starting with /api to jsonplaceholder
+        //仅在开发模式中使用,意思是用/api 去代理 'https://api.douban.com'
         '/api': {
             target: 'https://api.douban.com',
             changeOrigin: true,

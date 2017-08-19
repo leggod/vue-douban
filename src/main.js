@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import store from './store'
 import axios from 'axios'
+require('./css.css')
 Vue.prototype.$http = axios;  //在组件中使用axios发请求，只需this.$http.get();
 //Vue.use(VueAxios, axios)
 axios.get('/api/v2/movie/coming_soon').then(function (response) {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <tabbar></tabbar>
-    <div>电影</div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -13,7 +13,7 @@
 import tabbar from './tabbar'
 export default {
     created () {
-        console.log(this.$store.state);
+        
     },
     components: {
         tabbar,

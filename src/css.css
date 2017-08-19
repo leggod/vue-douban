@@ -1,0 +1,12 @@
+body{font-size: 2rem;margin: 0px;padding: 0px;}
+div{box-sizing: border-box}
+.fl{float: left}
+.item{border-bottom: 8px solid #eee;overflow: hidden;height: 100%;margin-top: 1px;}
+.div1{height: 320px;width: 35%;text-align: center;position: relative}
+.div1>img{position:absolute;transform:translate(-50%,-50%); left:50%; top:50%;height: 290px;width: 80%;box-shadow: 2px 2px 4px 2px #ccc;border-radius: 5px}
+.div2{width: 65%;padding: 10px;height: 320px}
+.div2>p{height: 2rem;line-height: 2rem;}
+.p1{font-weight: 600;padding: 10px 0px;font-size: 2.5rem}
+.p2,.p3,.p4{color:#666;font-size: 1.5rem;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.p3>span{padding-right:10px;}
+.p4>span{padding-right:10px;}

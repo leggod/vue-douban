@@ -34,7 +34,8 @@ export default {
     },
     methods: {
         jump (id) {
-            this.$router.push('/detail/'+ id)
+            this.$store.commit('save_prepage', this.$route.path); //先把当前url信息保存。
+            this.$router.push('/detail/'+ id); //再跳转
         }
     }
 }

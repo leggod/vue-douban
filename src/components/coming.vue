@@ -14,19 +14,6 @@
                 <p class="p4">主演：<span v-for="(item1,index1) in item.casts">{{item1.name}}</span></p>
             </div>
         </div>
-
-        <div class="item" >
-            <div class="fl div1">
-                <img  src="./../assets/logo.png" alt="">
-            </div>
-            
-            <div class="fl div2">
-                <p class="p1">杀破狼</p>
-                <p class="p2">评分：8.5</p>
-                <p class="p3">导演：叶伟信</p>
-                <p class="p4">主演：古天乐</p>
-            </div>
-        </div>
     </div>
 </template>
 
@@ -46,6 +33,7 @@ export default {
 	},
 	methods: {
         jump (id) {
+            this.$store.commit('save_prepage', this.$route.path); //先把当前url信息保存。
             this.$router.push('/detail/'+ id)
         }
     }

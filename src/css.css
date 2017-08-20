@@ -10,3 +10,16 @@ div{box-sizing: border-box}
 .p2,.p3,.p4{color:#666;font-size: 1.5rem;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
 .p3>span{padding-right:10px;}
 .p4>span{padding-right:10px;}
+/*影片详情*/
+.top{border-bottom: 1px solid #bbb;position: fixed;top: 0;left: 0;width: 100%;z-index: 2;}
+.top>span{padding: 10px;display: inline-block;}
+.container{overflow: hidden;margin-top: 62.6px; background-color: rgba(50, 50,50, .5)}
+.container-left{width: 35%;height: 426px;position: relative;}
+.container-left img{width: 90%; position:absolute;bottom: 0;left: 5%}
+.feature{overflow: hidden; }
+.feature div {width: 50%; text-align: center; padding: 20px 0px;border-bottom: 1px solid #ccc}
+.feature div:nth-child(1){border-right: 1px solid #ccc;}
+.container-right div p {color:white;height: 20px;line-height: 20px;}
+.container-right-div1{padding-top: 15%;}
+.container-right-div1 p:nth-child(1) {color:white;font-size: 2.5rem;font-weight: 700;}
+.container-right-div2 p:nth-child(1) span {padding-right: 5px;}

@@ -9,6 +9,11 @@
 export default {
     created() {
         this.changeClass(0);//先调用一次。
+        if(this.$store.state.pre_page == '/movie/coming'){
+            this.changeClass(1);
+        }else{
+            this.changeClass(0);
+        }
     },
     data () {
         return {
